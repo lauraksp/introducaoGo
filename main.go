@@ -9,12 +9,15 @@ var (
 func main() {
 	fmt.Println("Ola mundo")
 
-	nome := "Laura Kimberly"
-	empregado = true
+	//nome := "Laura Kimberly"
+	empregado = false
+	var salario float64 = 2.500
 
-	if empregado {
-		fmt.Println("Seja bem vinda, ", nome)
+	if salario > 3.000 {
+		fmt.Println("é maior que 3k")
+	} else if salario > 2.000 {
+		fmt.Println("está no caminho")
 	} else {
-		fmt.Println("Seja bem vinda")
+		fmt.Println("continuar estudando")
 	}
 }
