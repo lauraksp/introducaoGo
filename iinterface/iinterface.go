@@ -15,7 +15,7 @@ type Robo struct {
 }
 
 func (r *Robo) Fala(texto string) {
-	fmt.Println("texto")
+	fmt.Println(texto)
 }
 
 type Pessoa struct {
