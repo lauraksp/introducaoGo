@@ -20,7 +20,6 @@ func main() {
 	} else if salario > 1 {
 		fmt.Println("está no caminho")
 	} else {
-		fmt.Println("continuar estudando")
+		fmt.Println("continuar estudando.")
 	}
-
 }
