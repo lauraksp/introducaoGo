@@ -6,6 +6,16 @@ import (
 
 type Humano interface {
 	Fala(texto string)
+	Sente(sentimento string)
+}
+
+type Robo struct {
+	Nome           string
+	DataFabricacao string
+}
+
+func (r *Robo) Fala(texto string) {
+	fmt.Println("texto")
 }
 
 type Pessoa struct {
@@ -17,15 +27,21 @@ func (p *Pessoa) Fala(texto string) {
 	fmt.Println(texto)
 }
 
-func cadastrarCPF(h HUmano) {
-	h.CPF = "15100521608"
+func (p *Pessoa) Sente(sentimento string) {
+	fmt.Println("Estou sentindo ", sentimento)
+}
+
+func CadastrarCPF(h Humano) {
+	//h.CPF = "15100521608"
 	fmt.Println("CPF cadastrado")
 }
 
 func main() {
 
-	p := Pessoa{}
+	p := &Pessoa{}
 
 	p.Fala("Olá")
+
+	CadastrarCPF(p)
 
 }
