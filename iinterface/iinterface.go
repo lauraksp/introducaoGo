@@ -39,9 +39,12 @@ func CadastrarCPF(h Humano) {
 func main() {
 
 	p := &Pessoa{}
+	//r := &Robo{}
 
 	p.Fala("Olá")
+	//r.Fala("Olá, sou um robo") - robo n fala
 
 	CadastrarCPF(p)
+	//CadastrarCPF(r) - robo nao tem cpf
 
 }
